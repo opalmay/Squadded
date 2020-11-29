@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
 }
-p {
+p, h2, h3 {
     margin: 0;
 }
 button {
@@ -20,9 +20,18 @@ button {
     cursor: pointer;
     padding: 5px;
 }
-input{
+input {
     border: 0;
     border-bottom: black 1px solid;
     font-size: rem(18px);
     line-height: rem(22px);
+}
+a {
+    color:#0084F4;
+    text-decoration: none;
+    padding: 4px 0;
+}
+h2{
+    font-size: rem(26px);
+    line-height: rem(28px);
 }

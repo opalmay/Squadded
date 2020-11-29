@@ -1,6 +1,6 @@
 <template>
   <section class="feed">
-    <post-list @toggle-like="toggleLike" :posts="posts" />
+    <post-list @toggle-like="toggleLike" @add-comment="addComment" :posts="posts" />
   </section>
 </template>
 
@@ -11,6 +11,8 @@ export default {
     return {
       currentUser: {
         id: 1,
+        name: "Person 1",
+        imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
       },
       posts: [
         {
@@ -20,9 +22,10 @@ export default {
             imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
           },
           text: "look at this",
-          imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          imgUrl:
+            "https://www.lametayel-thailand.com/wp-content/uploads/2018/08/11-aerial-view.jpg",
           price: 123,
-          likes: [1,2,3,4,5,6],
+          likes: [1, 2, 3, 4, 5, 6],
           comments: [
             {
               id: 1,
@@ -65,11 +68,11 @@ export default {
       const likes = post.likes;
       if (likes.includes(id)) {
         const index = likes.indexOf(id);
-        post.likes = likes
-          .slice(0, index)
-          .concat(likes.slice(index + 1));
-      }
-      else likes.push(id)
+        post.likes = likes.slice(0, index).concat(likes.slice(index + 1));
+      } else likes.push(id);
+    },
+    addComment(post, commentText) {
+      post.comments.push({ poster: this.currentUser, text: connentText });
     },
   },
   components: { postList },

@@ -1,5 +1,5 @@
 <template>
-  <section class="post-list flex wrap justify-center">
+  <section class="post-list">
     <post-preview @toggle-like="$emit('toggle-like', post)" v-for="post in posts" :key="post.id" :post="post"/>
   </section>
 </template>
