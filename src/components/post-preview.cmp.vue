@@ -5,8 +5,8 @@
       <img class="post-img" :src="post.imgUrl" />
       {{ post.text }}
     </div>
-    <post-footer-cmp :post="post" />
-    <comment-list-cmp :comments="post.comments"/>
+    <post-footer-cmp @toggle-like="$emit('toggle-like')" @toggle-comments="showComments = !showComments" :post="post" />
+    <comment-list-cmp v-if="showComments" :comments="post.comments"/>
   </section>
 </template>
 
@@ -15,12 +15,17 @@ import CommentListCmp from './comment-list.cmp.vue';
 import PostFooterCmp from "./post-footer.cmp.vue";
 import postHeaderCmp from "./post-header.cmp.vue";
 export default {
-  components: { postHeaderCmp, PostFooterCmp, CommentListCmp },
-  props: {
+    props: {
     post: {
       type: Object,
     },
   },
+  data(){
+    return{
+      showComments:false
+    }
+  },
+  components: { postHeaderCmp, PostFooterCmp, CommentListCmp },
 };
 </script>
 

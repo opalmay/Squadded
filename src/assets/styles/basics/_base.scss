@@ -11,12 +11,18 @@ html {
 body {
     margin: 0;
 }
-p{
+p {
     margin: 0;
 }
-button{
+button {
     background: transparent;
     border: 0;
     cursor: pointer;
     padding: 5px;
+}
+input{
+    border: 0;
+    border-bottom: black 1px solid;
+    font-size: rem(18px);
+    line-height: rem(22px);
 }
