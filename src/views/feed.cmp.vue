@@ -22,7 +22,7 @@ export default {
           text: "look at this",
           imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
           price: 123,
-          likes: [1],
+          likes: [1,2,3,4,5,6],
           comments: [
             {
               id: 1,
@@ -66,7 +66,7 @@ export default {
       if (likes.includes(id)) {
         const index = likes.indexOf(id);
         post.likes = likes
-          .slice(0, index - 1)
+          .slice(0, index)
           .concat(likes.slice(index + 1));
       }
       else likes.push(id)
