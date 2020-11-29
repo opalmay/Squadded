@@ -4,7 +4,7 @@
     <div>
       <button class="svg" @click="$emit('toggle-comments')">
         <img src="@/assets/img/comment.svg" />
-        <span>{{ post.comments.length }}</span>
+        <span>{{ commentsLength }}</span>
       </button>
       <button class="svg" @click="$emit('toggle-like')">
         <img src="@/assets/img/heart.svg" />
@@ -19,6 +19,18 @@ export default {
   props: {
     post: {
       type: Object,
+    },
+  },
+  computed: {
+    commentsLength() {
+      const length = this.post.comments.length;
+      if (length > 99) return '99+';
+      else return length;
+    },
+    likesLength() {
+      const length = this.post.likes.length;
+      if (length > 99) return '99+';
+      else return length;
     },
   },
 };

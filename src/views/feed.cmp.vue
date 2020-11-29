@@ -1,6 +1,10 @@
 <template>
   <section class="feed">
-    <post-list @toggle-like="toggleLike" @add-comment="addComment" :posts="posts" />
+    <post-list
+      @toggle-like="toggleLike"
+      @add-comment="addComment"
+      :posts="posts"
+    />
   </section>
 </template>
 
@@ -21,7 +25,7 @@ export default {
             name: "Person 1",
             imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
           },
-          text: "look at this",
+          text: "Great View",
           imgUrl:
             "https://www.lametayel-thailand.com/wp-content/uploads/2018/08/11-aerial-view.jpg",
           price: 123,
@@ -51,11 +55,95 @@ export default {
             {
               id: 2,
               poster: {
-                id: 1,
-                name: "Person 1",
-                imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+                id: 2,
+                name: "Person 2",
+                imgUrl: "https://www.w3schools.com/howto/img_avatar2.png",
               },
-              text: "wow nice",
+              text: "Great pic",
+            },
+          ],
+        },
+        {
+          poster: {
+            name: "Person 2",
+            imgUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+          },
+          text: "a nice bridge",
+          imgUrl: "https://www.w3schools.com/howto/img_forest.jpg",
+          price: 123,
+          likes: [2,3,4,5],
+          comments: [
+            {
+              id: 2,
+              poster: {
+                id: 2,
+                name: "Person 2",
+                imgUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+              },
+              text: "Great pic",
+            },
+          ],
+        },
+        {
+          poster: {
+            name: "Person 1",
+            imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          },
+          text: "look at this",
+          imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          price: 123,
+          likes: [1,3,5,6,5,6],
+          comments: [
+            {
+              id: 2,
+              poster: {
+                id: 2,
+                name: "Person 2",
+                imgUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+              },
+              text: "Great pic",
+            },
+          ],
+        },
+        {
+          poster: {
+            name: "Person 1",
+            imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          },
+          text: "Pretty sunset",
+          imgUrl: "https://cf.bstatic.com/images/hotel/max1280x900/232/232358529.jpg",
+          price: 123,
+          likes: [1],
+          comments: [
+            {
+              id: 2,
+              poster: {
+                id: 2,
+                name: "Person 2",
+                imgUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+              },
+              text: "Great pic",
+            },
+          ],
+        },
+        {
+          poster: {
+            name: "Person 1",
+            imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          },
+          text: "look at this",
+          imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          price: 123,
+          likes: [1],
+          comments: [
+            {
+              id: 2,
+              poster: {
+                id: 2,
+                name: "Person 2",
+                imgUrl: "https://www.w3schools.com/howto/img_avatar2.png",
+              },
+              text: "Great pic",
             },
           ],
         },
