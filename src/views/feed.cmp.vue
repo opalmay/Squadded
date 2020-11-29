@@ -22,6 +22,7 @@ export default {
           likes: [1],
           comments: [
             {
+              id:1,
               poster: {
                 id:1,
                 name: "Person 1",
@@ -42,7 +43,9 @@ export default {
           likes: [1],
           comments: [
             {
+              id:2,
               poster: {
+                id:1,
                 name: "Person 1",
                 imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
               },

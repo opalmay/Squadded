@@ -8,6 +8,8 @@
 @import './basics/helpers';
 @import './basics/layout';
 // COMPONENTS
+@import './components/comment-list';
+@import './components/comment-preview';
 @import './components/post-header';
 @import './components/post-list';
 @import './components/post-preview';
