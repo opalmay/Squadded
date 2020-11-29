@@ -1,12 +1,10 @@
 <template>
-  <section>
-    <md-card>
-      <post-header-cmp :post="post" />
-      <md-card-content>
-        {{ post.text }}
-      </md-card-content>
-      <post-footer-cmp :post="post" />
-    </md-card>
+  <section class="post-preview">
+    <post-header-cmp :post="post" />
+    <div>
+      {{ post.text }}
+    </div>
+    <post-footer-cmp :post="post" />
   </section>
 </template>
 

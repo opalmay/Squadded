@@ -8,4 +8,9 @@
 @import './basics/helpers';
 @import './basics/layout';
 // COMPONENTS
+@import './components/post-header';
+@import './components/post-list';
+@import './components/post-preview';
+@import './components/post-footer';
 //VIEWS
+@import './views/feed';

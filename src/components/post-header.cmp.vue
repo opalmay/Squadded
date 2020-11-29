@@ -1,20 +1,20 @@
 <template>
-  <section>
-    <md-card-header>
-      <md-avatar>
-        <img :src="post.poster.imgUrl" alt="Avatar" />
-      </md-avatar>
-      <div class="md-title">{{ post.poster.name }}</div>
-    </md-card-header>
+  <section class="post-header flex align-center">
+      <div class="avatar"><avatar :username="post.poster.name" :src="post.poster.imgUrl"></avatar></div>
+    <div>{{ post.poster.name }}</div>
   </section>
 </template>
 
 <script>
+import Avatar from 'vue-avatar'
 export default {
   props: {
     post: {
       type: Object,
     },
+  },
+    components: {
+    Avatar
   },
 };
 </script>

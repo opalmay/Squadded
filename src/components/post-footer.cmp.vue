@@ -1,9 +1,9 @@
 <template>
   <section>
-    <md-card-actions>
+    <!-- <md-card-actions>
       <md-button>Action</md-button>
       <md-button>Action</md-button>
-    </md-card-actions>
+    </md-card-actions> -->
   </section>
 </template>
 
