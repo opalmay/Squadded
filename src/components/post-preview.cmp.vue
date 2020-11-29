@@ -2,6 +2,7 @@
   <section class="post-preview">
     <post-header-cmp :post="post" />
     <div>
+        <img class="post-img" :src="post.imgUrl">
       {{ post.text }}
     </div>
     <post-footer-cmp :post="post" />

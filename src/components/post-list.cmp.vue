@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="post-list flex wrap justify-center">
     <post-preview-cmp v-for="post in posts" :key="post.id" :post="post"/>
   </section>
 </template>

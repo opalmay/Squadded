@@ -1,9 +1,16 @@
 <template>
-  <section>
-    <!-- <md-card-actions>
-      <md-button>Action</md-button>
-      <md-button>Action</md-button>
-    </md-card-actions> -->
+  <section class="post-footer flex align-center space-between">
+    <p>${{ post.price }}</p>
+    <div>
+      <button class="svg">
+        <img src="@/assets/img/comment.svg" />
+        <span>{{ post.comments.length }}</span>
+      </button>
+      <button class="svg">
+        <img src="@/assets/img/heart.svg" />
+        <span>{{ post.comments.length }}</span>
+      </button>
+    </div>
   </section>
 </template>
 

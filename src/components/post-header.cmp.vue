@@ -1,6 +1,6 @@
 <template>
   <section class="post-header flex align-center">
-      <div class="avatar"><avatar :username="post.poster.name" :src="post.poster.imgUrl"></avatar></div>
+      <div class="avatar"><avatar :size=40 :username="post.poster.name" :src="post.poster.imgUrl"></avatar></div>
     <div>{{ post.poster.name }}</div>
   </section>
 </template>

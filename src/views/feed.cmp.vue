@@ -12,11 +12,34 @@ export default {
       posts: [
         {
           poster: {
+            id:1,
             name: "Person 1",
             imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
           },
           text: "look at this",
-          imgUrl: "https://www.w3schools.com/howto/img_avatar.pn",
+          imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          price: 123,
+          likes: [1],
+          comments: [
+            {
+              poster: {
+                id:1,
+                name: "Person 1",
+                imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+              },
+              text: 'wow nice'
+            },
+          ],
+        },
+                {
+          poster: {
+            name: "Person 1",
+            imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          },
+          text: "look at this",
+          imgUrl: "https://www.w3schools.com/howto/img_avatar.png",
+          price: 123,
+          likes: [1],
           comments: [
             {
               poster: {
